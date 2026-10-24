@@ -9,11 +9,13 @@
     <MapboxVectorStylesAndLayers />
     <MarkAnimation />
     <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
     <ObjectModelTableType />
     <SchemaViewerObjectModel />
     <SetMembershipControl />
     <SheetIdentifierTracking />
     <SortTagCleanup />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
     <WindowsPersistSimpleIdentifiers />
     <ZoneBackgroundTransparency />
   </document-format-change-manifest>
@@ -249,6 +251,203 @@
           <groupfilter function='level-members' level='[state_name]' />
         </groupfilter>
       </group>
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='/Users/foneoclock/Documents/My Tableau Repository/Datasources/places_county_clean.hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='10/24/2026 04:56:59 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <refresh>
+            <refresh-event add-from-file-path='places_county_clean' increment-value='%null%' refresh-type='create' rows-inserted='2874' timestamp-start='2026-10-24 16:56:59.345' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>state</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[state]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>state</remote-alias>
+              <ordinal>0</ordinal>
+              <family>places_county_clean.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>46</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[places_county_clean.csv_2DD0D56B88E84872B38200AE6E91A0DC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>state_name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[state_name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>state_name</remote-alias>
+              <ordinal>1</ordinal>
+              <family>places_county_clean.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>46</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[places_county_clean.csv_2DD0D56B88E84872B38200AE6E91A0DC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>county</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[county]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>county</remote-alias>
+              <ordinal>2</ordinal>
+              <family>places_county_clean.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1214</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[places_county_clean.csv_2DD0D56B88E84872B38200AE6E91A0DC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>fips</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[fips]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>fips</remote-alias>
+              <ordinal>3</ordinal>
+              <family>places_county_clean.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2874</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <object-id>[places_county_clean.csv_2DD0D56B88E84872B38200AE6E91A0DC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>population</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[population]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>population</remote-alias>
+              <ordinal>4</ordinal>
+              <family>places_county_clean.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2526</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[places_county_clean.csv_2DD0D56B88E84872B38200AE6E91A0DC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>dental_visit_pct</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[dental_visit_pct]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>dental_visit_pct</remote-alias>
+              <ordinal>5</ordinal>
+              <family>places_county_clean.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>359</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[places_county_clean.csv_2DD0D56B88E84872B38200AE6E91A0DC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>teeth_lost_pct</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[teeth_lost_pct]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>teeth_lost_pct</remote-alias>
+              <ordinal>6</ordinal>
+              <family>places_county_clean.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>268</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[places_county_clean.csv_2DD0D56B88E84872B38200AE6E91A0DC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>diabetes_pct</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[diabetes_pct]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>diabetes_pct</remote-alias>
+              <ordinal>7</ordinal>
+              <family>places_county_clean.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>136</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[places_county_clean.csv_2DD0D56B88E84872B38200AE6E91A0DC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>heart_disease_pct</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[heart_disease_pct]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>heart_disease_pct</remote-alias>
+              <ordinal>8</ordinal>
+              <family>places_county_clean.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>58</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[places_county_clean.csv_2DD0D56B88E84872B38200AE6E91A0DC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>smoking_pct</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[smoking_pct]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>smoking_pct</remote-alias>
+              <ordinal>9</ordinal>
+              <family>places_county_clean.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>194</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[places_county_clean.csv_2DD0D56B88E84872B38200AE6E91A0DC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>obesity_pct</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[obesity_pct]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>obesity_pct</remote-alias>
+              <ordinal>10</ordinal>
+              <family>places_county_clean.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>242</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[places_county_clean.csv_2DD0D56B88E84872B38200AE6E91A0DC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>uninsured_pct</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[uninsured_pct]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>uninsured_pct</remote-alias>
+              <ordinal>11</ordinal>
+              <family>places_county_clean.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>243</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[places_county_clean.csv_2DD0D56B88E84872B38200AE6E91A0DC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>dental_group</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[dental_group]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>dental_group</remote-alias>
+              <ordinal>12</ordinal>
+              <family>places_county_clean.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[places_county_clean.csv_2DD0D56B88E84872B38200AE6E91A0DC]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
       <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
       <style>
         <style-rule element='mark'>
@@ -291,6 +490,9 @@
                   <column datatype='string' name='dental_group' ordinal='12' />
                 </columns>
               </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
             </properties>
           </object>
         </objects>
@@ -579,8 +781,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='950' minheight='950' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='19' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='97916' id='18' param='vert' type-v2='layout-flow' w='98828' x='586' y='1042'>
+            <zone h='100000' id='21' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97916' id='20' param='vert' type-v2='layout-flow' w='98828' x='586' y='1042'>
                 <zone h='5469' id='13' type-v2='title' w='98828' x='586' y='1042'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
