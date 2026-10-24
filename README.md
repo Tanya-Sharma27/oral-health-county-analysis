@@ -2,7 +2,7 @@
 
 A population health analysis of the relationship between dental care access and chronic disease across 2,874 U.S. counties, built with **Python**, **R**, and **Tableau**.
 
-🔗 **[View the interactive Tableau dashboard](ADD-YOUR-TABLEAU-PUBLIC-LINK-HERE)**
+🔗 **[View the interactive Tableau dashboard](https://public.tableau.com/app/profile/tanya.sharma1076/viz/oral_health_dashboard/OralHealthandChronicDiseaseAcrossU_S_Counties?publish=yes)**
 
 ![Dashboard preview](charts/dashboard_screenshot.png)
 
